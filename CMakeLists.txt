@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(Tree VERSION 0.1.0)
+
+include(CTest)
+enable_testing()
+aux_source_directory(. DIR_SRCS)
+add_executable(Tree ${DIR_SRCS})
+
+set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+include(CPack)

@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "${workspaceRoot}\\build\\build.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "cmake",
+            "options": {
+                "cwd": "${workspaceFolder}/bin"    //切换到build 下，重要！
+            },
+            "type": "shell",
+            "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug .. ",
+        },
+        {
+            "label": "make",
+            "options": {
+                "cwd": "${workspaceFolder}/bin"  //切换到build 下，重要！
+            },
+            "type": "shell",
+            "command": "make -j2",
+            "dependsOn": [ "cmake" ],  //非常重要！ make 的执行依赖 Cmake 执行完毕，不然呵呵
+        },
+    ]
+}

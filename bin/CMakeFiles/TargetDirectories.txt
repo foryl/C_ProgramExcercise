@@ -32,3 +32,9 @@ E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles/package.dir
 E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles/test.dir
 E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles/edit_cache.dir
 E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles/rebuild_cache.dir
+E:/0.MyExcercise/1.CAndCPP/Tree/bin/array/CMakeFiles/array.dir
+E:/0.MyExcercise/1.CAndCPP/Tree/bin/array/CMakeFiles/package.dir
+E:/0.MyExcercise/1.CAndCPP/Tree/bin/array/CMakeFiles/package_source.dir
+E:/0.MyExcercise/1.CAndCPP/Tree/bin/array/CMakeFiles/rebuild_cache.dir
+E:/0.MyExcercise/1.CAndCPP/Tree/bin/array/CMakeFiles/test.dir
+E:/0.MyExcercise/1.CAndCPP/Tree/bin/array/CMakeFiles/edit_cache.dir

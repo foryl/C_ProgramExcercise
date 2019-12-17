@@ -1,17 +1,17 @@
 [
 {
   "directory": "E:/0.MyExcercise/1.CAndCPP/Tree/build",
-  "command": "D:/ProgramFiles/MinGW/bin/gcc.exe   -g   -o CMakeFiles/Tree.dir/main.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/main.c",
+  "command": "D:/ProgramFiles/MinGW/bin/gcc.exe  @CMakeFiles/Tree.dir/includes_C.rsp -g   -o CMakeFiles/Tree.dir/main.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/main.c",
   "file": "E:/0.MyExcercise/1.CAndCPP/Tree/main.c"
 },
 {
-  "directory": "E:/0.MyExcercise/1.CAndCPP/Tree/build",
-  "command": "D:/ProgramFiles/MinGW/bin/gcc.exe   -g   -o CMakeFiles/Tree.dir/queue.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/queue.c",
-  "file": "E:/0.MyExcercise/1.CAndCPP/Tree/queue.c"
+  "directory": "E:/0.MyExcercise/1.CAndCPP/Tree/build/array",
+  "command": "D:/ProgramFiles/MinGW/bin/gcc.exe  @CMakeFiles/array.dir/includes_C.rsp -g   -o CMakeFiles/array.dir/queue.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/array/queue.c",
+  "file": "E:/0.MyExcercise/1.CAndCPP/Tree/array/queue.c"
 },
 {
-  "directory": "E:/0.MyExcercise/1.CAndCPP/Tree/build",
-  "command": "D:/ProgramFiles/MinGW/bin/gcc.exe   -g   -o CMakeFiles/Tree.dir/tree.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/tree.c",
-  "file": "E:/0.MyExcercise/1.CAndCPP/Tree/tree.c"
+  "directory": "E:/0.MyExcercise/1.CAndCPP/Tree/build/array",
+  "command": "D:/ProgramFiles/MinGW/bin/gcc.exe  @CMakeFiles/array.dir/includes_C.rsp -g   -o CMakeFiles/array.dir/tree.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/array/tree.c",
+  "file": "E:/0.MyExcercise/1.CAndCPP/Tree/array/tree.c"
 }
 ]

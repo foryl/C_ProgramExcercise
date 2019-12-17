@@ -54,11 +54,12 @@ CMAKE_BINARY_DIR = E:/0.MyExcercise/1.CAndCPP/Tree/bin
 
 # The main recursive "all" target.
 all: CMakeFiles/Tree.dir/all
+all: array/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: array/preinstall
 
 .PHONY : preinstall
 
@@ -92,8 +93,27 @@ clean: CMakeFiles/ContinuousBuild.dir/clean
 clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/Tree.dir/clean
+clean: array/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory array
+
+# Recursive "all" directory target.
+array/all: array/CMakeFiles/array.dir/all
+
+.PHONY : array/all
+
+# Recursive "preinstall" directory target.
+array/preinstall:
+
+.PHONY : array/preinstall
+
+# Recursive "clean" directory target.
+array/clean: array/CMakeFiles/array.dir/clean
+
+.PHONY : array/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/NightlyMemoryCheck.dir
@@ -855,15 +875,15 @@ CMakeFiles/ContinuousCoverage.dir/clean:
 # Target rules for target CMakeFiles/Tree.dir
 
 # All Build rule for target.
-CMakeFiles/Tree.dir/all:
+CMakeFiles/Tree.dir/all: array/CMakeFiles/array.dir/all
 	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/depend
 	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles --progress-num=1,2,3,4 "Built target Tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles --progress-num=1,2 "Built target Tree"
 .PHONY : CMakeFiles/Tree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Tree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Tree.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles 0
 .PHONY : CMakeFiles/Tree.dir/rule
@@ -877,6 +897,33 @@ Tree: CMakeFiles/Tree.dir/rule
 CMakeFiles/Tree.dir/clean:
 	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/clean
 .PHONY : CMakeFiles/Tree.dir/clean
+
+#=============================================================================
+# Target rules for target array/CMakeFiles/array.dir
+
+# All Build rule for target.
+array/CMakeFiles/array.dir/all:
+	$(MAKE) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/depend
+	$(MAKE) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles --progress-num=3,4,5 "Built target array"
+.PHONY : array/CMakeFiles/array.dir/all
+
+# Build rule for subdir invocation for target.
+array/CMakeFiles/array.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 array/CMakeFiles/array.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles 0
+.PHONY : array/CMakeFiles/array.dir/rule
+
+# Convenience name for target.
+array: array/CMakeFiles/array.dir/rule
+
+.PHONY : array
+
+# clean rule for target.
+array/CMakeFiles/array.dir/clean:
+	$(MAKE) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/clean
+.PHONY : array/CMakeFiles/array.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

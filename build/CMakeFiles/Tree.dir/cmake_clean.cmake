@@ -4,8 +4,6 @@ file(REMOVE_RECURSE
   "../bin/Tree.pdb"
   "../bin/libTree.dll.a"
   "CMakeFiles/Tree.dir/main.c.obj"
-  "CMakeFiles/Tree.dir/queue.c.obj"
-  "CMakeFiles/Tree.dir/tree.c.obj"
 )
 
 # Per-language clean rules from dependency scanning.

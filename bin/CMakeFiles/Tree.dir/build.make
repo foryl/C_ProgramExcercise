@@ -58,6 +58,7 @@ include CMakeFiles/Tree.dir/progress.make
 include CMakeFiles/Tree.dir/flags.make
 
 CMakeFiles/Tree.dir/main.c.obj: CMakeFiles/Tree.dir/flags.make
+CMakeFiles/Tree.dir/main.c.obj: CMakeFiles/Tree.dir/includes_C.rsp
 CMakeFiles/Tree.dir/main.c.obj: ../main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Tree.dir/main.c.obj"
 	D:/ProgramFiles/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Tree.dir/main.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/main.c
@@ -70,48 +71,19 @@ CMakeFiles/Tree.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Tree.dir/main.c.s"
 	D:/ProgramFiles/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/0.MyExcercise/1.CAndCPP/Tree/main.c -o CMakeFiles/Tree.dir/main.c.s
 
-CMakeFiles/Tree.dir/queue.c.obj: CMakeFiles/Tree.dir/flags.make
-CMakeFiles/Tree.dir/queue.c.obj: ../queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Tree.dir/queue.c.obj"
-	D:/ProgramFiles/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Tree.dir/queue.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/queue.c
-
-CMakeFiles/Tree.dir/queue.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Tree.dir/queue.c.i"
-	D:/ProgramFiles/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/0.MyExcercise/1.CAndCPP/Tree/queue.c > CMakeFiles/Tree.dir/queue.c.i
-
-CMakeFiles/Tree.dir/queue.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Tree.dir/queue.c.s"
-	D:/ProgramFiles/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/0.MyExcercise/1.CAndCPP/Tree/queue.c -o CMakeFiles/Tree.dir/queue.c.s
-
-CMakeFiles/Tree.dir/tree.c.obj: CMakeFiles/Tree.dir/flags.make
-CMakeFiles/Tree.dir/tree.c.obj: ../tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Tree.dir/tree.c.obj"
-	D:/ProgramFiles/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Tree.dir/tree.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/tree.c
-
-CMakeFiles/Tree.dir/tree.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Tree.dir/tree.c.i"
-	D:/ProgramFiles/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/0.MyExcercise/1.CAndCPP/Tree/tree.c > CMakeFiles/Tree.dir/tree.c.i
-
-CMakeFiles/Tree.dir/tree.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Tree.dir/tree.c.s"
-	D:/ProgramFiles/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/0.MyExcercise/1.CAndCPP/Tree/tree.c -o CMakeFiles/Tree.dir/tree.c.s
-
 # Object files for target Tree
 Tree_OBJECTS = \
-"CMakeFiles/Tree.dir/main.c.obj" \
-"CMakeFiles/Tree.dir/queue.c.obj" \
-"CMakeFiles/Tree.dir/tree.c.obj"
+"CMakeFiles/Tree.dir/main.c.obj"
 
 # External object files for target Tree
 Tree_EXTERNAL_OBJECTS =
 
 Tree.exe: CMakeFiles/Tree.dir/main.c.obj
-Tree.exe: CMakeFiles/Tree.dir/queue.c.obj
-Tree.exe: CMakeFiles/Tree.dir/tree.c.obj
 Tree.exe: CMakeFiles/Tree.dir/build.make
+Tree.exe: array/libarray.a
 Tree.exe: CMakeFiles/Tree.dir/linklibs.rsp
 Tree.exe: CMakeFiles/Tree.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Tree.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Tree.exe"
 	"D:/Program Files/CMake/bin/cmake.exe" -E remove -f CMakeFiles/Tree.dir/objects.a
 	D:/ProgramFiles/MinGW/mingw32/bin/ar.exe cr CMakeFiles/Tree.dir/objects.a @CMakeFiles/Tree.dir/objects1.rsp
 	D:/ProgramFiles/MinGW/bin/gcc.exe -g   -Wl,--whole-archive CMakeFiles/Tree.dir/objects.a -Wl,--no-whole-archive  -o Tree.exe -Wl,--out-implib,libTree.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/Tree.dir/linklibs.rsp

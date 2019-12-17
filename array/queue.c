@@ -37,3 +37,9 @@ int QueueIsFull(void)
 {
     return (rear + 2) % ARRAY_SIZE == front;
 }
+
+void QueueInit(void)
+{
+    rear = 98;
+    front = 97;
+}

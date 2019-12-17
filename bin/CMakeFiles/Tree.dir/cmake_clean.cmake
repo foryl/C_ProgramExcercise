@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Tree.dir/main.c.obj"
-  "CMakeFiles/Tree.dir/queue.c.obj"
-  "CMakeFiles/Tree.dir/tree.c.obj"
   "Tree.exe"
   "Tree.exe.manifest"
   "Tree.pdb"

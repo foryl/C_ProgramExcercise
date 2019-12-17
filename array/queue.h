@@ -22,3 +22,5 @@ int QueueIsEmpty(void);
 
 /* 判断是否队满 */
 int QueueIsFull(void);
+
+void QueueInit(void);

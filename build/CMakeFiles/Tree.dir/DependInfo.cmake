@@ -5,17 +5,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "E:/0.MyExcercise/1.CAndCPP/Tree/main.c" "E:/0.MyExcercise/1.CAndCPP/Tree/build/CMakeFiles/Tree.dir/main.c.obj"
-  "E:/0.MyExcercise/1.CAndCPP/Tree/queue.c" "E:/0.MyExcercise/1.CAndCPP/Tree/build/CMakeFiles/Tree.dir/queue.c.obj"
-  "E:/0.MyExcercise/1.CAndCPP/Tree/tree.c" "E:/0.MyExcercise/1.CAndCPP/Tree/build/CMakeFiles/Tree.dir/tree.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../array"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "E:/0.MyExcercise/1.CAndCPP/Tree/build/array/CMakeFiles/array.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

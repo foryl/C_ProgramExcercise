@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/0.MyExcercise/1.CAndCPP/Tree/array/queue.c
+queue.h
+E:/0.MyExcercise/1.CAndCPP/Tree/array/queue.h
+stdio.h
+-
+assert.h
+-
+
+E:/0.MyExcercise/1.CAndCPP/Tree/array/queue.h
+stdlib.h
+-
+
+E:/0.MyExcercise/1.CAndCPP/Tree/array/tree.c
+tree.h
+E:/0.MyExcercise/1.CAndCPP/Tree/array/tree.h
+assert.h
+-
+stdio.h
+-
+
+E:/0.MyExcercise/1.CAndCPP/Tree/array/tree.h
+queue.h
+E:/0.MyExcercise/1.CAndCPP/Tree/array/queue.h
+

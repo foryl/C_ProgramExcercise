@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-E:/0.MyExcercise/1.CAndCPP/Tree/queue.h
+../array/queue.h
 stdlib.h
 -
 
-E:/0.MyExcercise/1.CAndCPP/Tree/tree.c
+../array/tree.h
+queue.h
+../array/queue.h
+
+E:/0.MyExcercise/1.CAndCPP/Tree/main.c
 tree.h
 E:/0.MyExcercise/1.CAndCPP/Tree/tree.h
-queue.h
-E:/0.MyExcercise/1.CAndCPP/Tree/queue.h
-assert.h
--
 stdio.h
 -
-
-E:/0.MyExcercise/1.CAndCPP/Tree/tree.h
+stdlib.h
+-
 

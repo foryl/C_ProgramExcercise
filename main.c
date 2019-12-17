@@ -29,6 +29,7 @@ int main()
 
     printf("This is level order traverse\n");
     LevelOrderTraverse(PrintNumber);
+    
     //system("pause");
     return 0;
 }   

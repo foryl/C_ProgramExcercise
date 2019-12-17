@@ -520,6 +520,19 @@ Tree/fast:
 	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/build
 .PHONY : Tree/fast
 
+#=============================================================================
+# Target rules for targets named array
+
+# Build rule for target.
+array: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 array
+.PHONY : array
+
+# fast build rule for target.
+array/fast:
+	$(MAKE) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/build
+.PHONY : array/fast
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -546,60 +559,6 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/main.c.s
 .PHONY : main.c.s
-
-queue.obj: queue.c.obj
-
-.PHONY : queue.obj
-
-# target to build an object file
-queue.c.obj:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/queue.c.obj
-.PHONY : queue.c.obj
-
-queue.i: queue.c.i
-
-.PHONY : queue.i
-
-# target to preprocess a source file
-queue.c.i:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/queue.c.i
-.PHONY : queue.c.i
-
-queue.s: queue.c.s
-
-.PHONY : queue.s
-
-# target to generate assembly for a file
-queue.c.s:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/queue.c.s
-.PHONY : queue.c.s
-
-tree.obj: tree.c.obj
-
-.PHONY : tree.obj
-
-# target to build an object file
-tree.c.obj:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/tree.c.obj
-.PHONY : tree.c.obj
-
-tree.i: tree.c.i
-
-.PHONY : tree.i
-
-# target to preprocess a source file
-tree.c.i:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/tree.c.i
-.PHONY : tree.c.i
-
-tree.s: tree.c.s
-
-.PHONY : tree.s
-
-# target to generate assembly for a file
-tree.c.s:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/tree.c.s
-.PHONY : tree.c.s
 
 # Help Target
 help:
@@ -641,15 +600,10 @@ help:
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... array"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... queue.obj"
-	@echo "... queue.i"
-	@echo "... queue.s"
-	@echo "... tree.obj"
-	@echo "... tree.i"
-	@echo "... tree.s"
 .PHONY : help
 
 

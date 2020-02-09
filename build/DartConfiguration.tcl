@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: E:/0.MyExcercise/1.CAndCPP/Tree
-BuildDirectory: E:/0.MyExcercise/1.CAndCPP/Tree/build
+SourceDirectory: E:/0.MyExcercise/3.CPPProgrammingExcercise
+BuildDirectory: E:/0.MyExcercise/3.CPPProgrammingExcercise/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "D:/Program Files/CMake/bin/cmake.exe" "E:/0.MyExcercise/1.CAndCPP/Tree"
+ConfigureCommand: "D:/Program Files/CMake/bin/cmake.exe" "E:/0.MyExcercise/3.CPPProgrammingExcercise"
 MakeCommand: D:/Program\ Files/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

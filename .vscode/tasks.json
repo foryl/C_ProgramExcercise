@@ -16,7 +16,7 @@
                 "cwd": "${workspaceFolder}/bin"    //切换到build 下，重要！
             },
             "type": "shell",
-            "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug .. ",
+            "command": "cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Debug ..",
         },
         {
             "label": "make",

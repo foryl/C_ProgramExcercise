@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Tree.dir/main.c.obj"
+  "CMakeFiles/Tree.dir/main.cpp.obj"
   "Tree.exe"
   "Tree.exe.manifest"
   "Tree.pdb"
@@ -7,6 +7,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C)
+foreach(lang CXX)
   include(CMakeFiles/Tree.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

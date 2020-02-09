@@ -1,17 +1,12 @@
 [
 {
-  "directory": "E:/0.MyExcercise/1.CAndCPP/Tree/build",
-  "command": "D:/ProgramFiles/MinGW/bin/gcc.exe  @CMakeFiles/Tree.dir/includes_C.rsp -g   -o CMakeFiles/Tree.dir/main.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/main.c",
-  "file": "E:/0.MyExcercise/1.CAndCPP/Tree/main.c"
+  "directory": "E:/0.MyExcercise/3.CPPProgrammingExcercise/build",
+  "command": "D:/ProgramFiles/MinGW/bin/g++.exe   @CMakeFiles/CppExcercise.dir/includes_CXX.rsp -g   -o CMakeFiles/CppExcercise.dir/main.cpp.obj -c E:/0.MyExcercise/3.CPPProgrammingExcercise/main.cpp",
+  "file": "E:/0.MyExcercise/3.CPPProgrammingExcercise/main.cpp"
 },
 {
-  "directory": "E:/0.MyExcercise/1.CAndCPP/Tree/build/array",
-  "command": "D:/ProgramFiles/MinGW/bin/gcc.exe  @CMakeFiles/array.dir/includes_C.rsp -g   -o CMakeFiles/array.dir/queue.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/array/queue.c",
-  "file": "E:/0.MyExcercise/1.CAndCPP/Tree/array/queue.c"
-},
-{
-  "directory": "E:/0.MyExcercise/1.CAndCPP/Tree/build/array",
-  "command": "D:/ProgramFiles/MinGW/bin/gcc.exe  @CMakeFiles/array.dir/includes_C.rsp -g   -o CMakeFiles/array.dir/tree.c.obj   -c E:/0.MyExcercise/1.CAndCPP/Tree/array/tree.c",
-  "file": "E:/0.MyExcercise/1.CAndCPP/Tree/array/tree.c"
+  "directory": "E:/0.MyExcercise/3.CPPProgrammingExcercise/build/library",
+  "command": "D:/ProgramFiles/MinGW/bin/g++.exe   @CMakeFiles/library.dir/includes_CXX.rsp -g   -o CMakeFiles/library.dir/LeetCode.cc.obj -c E:/0.MyExcercise/3.CPPProgrammingExcercise/library/LeetCode.cc",
+  "file": "E:/0.MyExcercise/3.CPPProgrammingExcercise/library/LeetCode.cc"
 }
 ]

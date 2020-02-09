@@ -48,10 +48,10 @@ RM = "D:/Program Files/CMake/bin/cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/0.MyExcercise/1.CAndCPP/Tree
+CMAKE_SOURCE_DIR = E:/0.MyExcercise/3.CPPProgrammingExcercise
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/0.MyExcercise/1.CAndCPP/Tree/bin
+CMAKE_BINARY_DIR = E:/0.MyExcercise/3.CPPProgrammingExcercise/bin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = E:/0.MyExcercise/1.CAndCPP/Tree/bin
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	"D:/Program Files/CMake/bin/cpack.exe" --config ./CPackSourceConfig.cmake E:/0.MyExcercise/1.CAndCPP/Tree/bin/CPackSourceConfig.cmake
+	"D:/Program Files/CMake/bin/cpack.exe" --config ./CPackSourceConfig.cmake E:/0.MyExcercise/3.CPPProgrammingExcercise/bin/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -113,9 +113,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/0.MyExcercise/3.CPPProgrammingExcercise/bin/CMakeFiles E:/0.MyExcercise/3.CPPProgrammingExcercise/bin/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/0.MyExcercise/3.CPPProgrammingExcercise/bin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,6 +155,19 @@ NightlyMemoryCheck: cmake_check_build_system
 NightlyMemoryCheck/fast:
 	$(MAKE) -f CMakeFiles/NightlyMemoryCheck.dir/build.make CMakeFiles/NightlyMemoryCheck.dir/build
 .PHONY : NightlyMemoryCheck/fast
+
+#=============================================================================
+# Target rules for targets named CppExcercise
+
+# Build rule for target.
+CppExcercise: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CppExcercise
+.PHONY : CppExcercise
+
+# fast build rule for target.
+CppExcercise/fast:
+	$(MAKE) -f CMakeFiles/CppExcercise.dir/build.make CMakeFiles/CppExcercise.dir/build
+.PHONY : CppExcercise/fast
 
 #=============================================================================
 # Target rules for targets named Experimental
@@ -508,57 +521,44 @@ ContinuousCoverage/fast:
 .PHONY : ContinuousCoverage/fast
 
 #=============================================================================
-# Target rules for targets named Tree
+# Target rules for targets named library
 
 # Build rule for target.
-Tree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Tree
-.PHONY : Tree
+library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 library
+.PHONY : library
 
 # fast build rule for target.
-Tree/fast:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/build
-.PHONY : Tree/fast
+library/fast:
+	$(MAKE) -f library/CMakeFiles/library.dir/build.make library/CMakeFiles/library.dir/build
+.PHONY : library/fast
 
-#=============================================================================
-# Target rules for targets named array
-
-# Build rule for target.
-array: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 array
-.PHONY : array
-
-# fast build rule for target.
-array/fast:
-	$(MAKE) -f array/CMakeFiles/array.dir/build.make array/CMakeFiles/array.dir/build
-.PHONY : array/fast
-
-main.obj: main.c.obj
+main.obj: main.cpp.obj
 
 .PHONY : main.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/main.c.obj
-.PHONY : main.c.obj
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles/CppExcercise.dir/build.make CMakeFiles/CppExcercise.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-main.i: main.c.i
+main.i: main.cpp.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/main.c.i
-.PHONY : main.c.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/CppExcercise.dir/build.make CMakeFiles/CppExcercise.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main.s: main.c.s
+main.s: main.cpp.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Tree.dir/build.make CMakeFiles/Tree.dir/main.c.s
-.PHONY : main.c.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/CppExcercise.dir/build.make CMakeFiles/CppExcercise.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -567,6 +567,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... NightlyMemoryCheck"
+	@echo "... CppExcercise"
 	@echo "... Experimental"
 	@echo "... NightlySubmit"
 	@echo "... NightlyConfigure"
@@ -595,12 +596,11 @@ help:
 	@echo "... ContinuousBuild"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousCoverage"
-	@echo "... Tree"
 	@echo "... package"
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... array"
+	@echo "... library"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

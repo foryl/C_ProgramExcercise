@@ -1,4 +1,4 @@
-# Install script for directory: E:/0.MyExcercise/1.CAndCPP/Tree
+# Install script for directory: E:/0.MyExcercise/3.CPPProgrammingExcercise
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("E:/0.MyExcercise/1.CAndCPP/Tree/build/array/cmake_install.cmake")
+  include("E:/0.MyExcercise/3.CPPProgrammingExcercise/build/library/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/0.MyExcercise/1.CAndCPP/Tree/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/0.MyExcercise/3.CPPProgrammingExcercise/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

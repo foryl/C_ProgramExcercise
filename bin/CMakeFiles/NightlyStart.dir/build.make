@@ -43,10 +43,10 @@ RM = "D:/Program Files/CMake/bin/cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/0.MyExcercise/1.CAndCPP/Tree
+CMAKE_SOURCE_DIR = E:/0.MyExcercise/3.CPPProgrammingExcercise
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/0.MyExcercise/1.CAndCPP/Tree/bin
+CMAKE_BINARY_DIR = E:/0.MyExcercise/3.CPPProgrammingExcercise/bin
 
 # Utility rule file for NightlyStart.
 
@@ -71,6 +71,6 @@ CMakeFiles/NightlyStart.dir/clean:
 .PHONY : CMakeFiles/NightlyStart.dir/clean
 
 CMakeFiles/NightlyStart.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" E:/0.MyExcercise/1.CAndCPP/Tree E:/0.MyExcercise/1.CAndCPP/Tree E:/0.MyExcercise/1.CAndCPP/Tree/bin E:/0.MyExcercise/1.CAndCPP/Tree/bin E:/0.MyExcercise/1.CAndCPP/Tree/bin/CMakeFiles/NightlyStart.dir/DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" E:/0.MyExcercise/3.CPPProgrammingExcercise E:/0.MyExcercise/3.CPPProgrammingExcercise E:/0.MyExcercise/3.CPPProgrammingExcercise/bin E:/0.MyExcercise/3.CPPProgrammingExcercise/bin E:/0.MyExcercise/3.CPPProgrammingExcercise/bin/CMakeFiles/NightlyStart.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyStart.dir/depend
 

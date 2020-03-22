@@ -116,7 +116,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Tree
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/CppExcercise
 
 //Path to ld program
 CMAKE_LINKER:FILEPATH=D:/ProgramFiles/MinGW/mingw32/bin/ld.exe
@@ -338,12 +338,6 @@ SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 
 //Path to a program.
 SVNCOMMAND:FILEPATH=SVNCOMMAND-NOTFOUND
-
-//Value Computed by CMake
-Tree_BINARY_DIR:STATIC=E:/0.MyExcercise/3.CPPProgrammingExcercise/bin
-
-//Value Computed by CMake
-Tree_SOURCE_DIR:STATIC=E:/0.MyExcercise/3.CPPProgrammingExcercise
 
 
 ########################

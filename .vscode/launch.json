@@ -8,7 +8,7 @@
             "name": "debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${command:cmake.launchTargetPath}",
+            "program": "${workspaceRoot}/bin/CppExcercise.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

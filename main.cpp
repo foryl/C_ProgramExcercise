@@ -152,33 +152,54 @@ void Solution107Test()
 
 }
 
+void Solution_letterCombinations()
+{
+    Solution solution;
+    string testStr = "23";
+    vector<string> resultStrs;
+    resultStrs = solution.letterCombinations(testStr);
+    for(vector<string>::iterator iter = resultStrs.begin(); iter != resultStrs.end();iter++) {
+        cout<<*iter<<endl;
+    }
+}
+
+void Solution_mergeTest()
+{
+    Solution solution;
+    vector<vector<int>> testVec = {
+        {1 , 2},
+        {2 , 4},
+        {6 , 7},
+        {9 , 12}
+    };
+    vector<vector<int>> result = solution.merge(testVec);
+    cout<<"the size of result is"<< result.size() <<endl;
+    for(int i = 0; i < result.size(); i++) {
+        cout<<"result [0]:"<< result[i][0] <<"result[i][1]:"<< result[i][1]<< endl;
+    }
+}
+
+void Solution_InsertTest()
+{
+    Solution solution;
+    vector<vector<int>> testVec = {
+        {1,2}, {3,5}, {6,7}, {8,10}, {12,16}
+    };
+    vector<int> insertInterval = {4, 8};
+    vector<vector<int>> result = solution.insert(testVec, insertInterval);
+    cout<<"the size of result is "<< result.size() <<endl;
+    for(int i = 0; i < result.size(); i++) {
+        cout<<"result first: "<< result[i][0] <<"result second: "<< result[i][1]<< endl;
+    }
+
+}
 
 int main()
 {
-    vector<int> nums;
-    nums.push_back(4);
-    nums.push_back(5);
-    nums.push_back(8);
-    nums.push_back(2);
-
-    ifstream testFile("test.txt");
-    ifstream testFile2 = "test2.txt";
-    Sales_item item = string("021-9999-9999");
-
-    Sales_item::Sales_item()
-    KthLargest largest(3,nums);
-
-    int result = largest.add(3);
-    cout<<"this result is:"<<result<<endl;
-    result = largest.add(5);
-    cout<<"this result is:"<<result<<endl;
-    result = largest.add(10);
-    cout<<"this result is:"<<result<<endl;
-    result = largest.add(9);
-    cout<<"this result is:"<<result<<endl;
-    result = largest.add(4);
-    cout<<"this result is:"<<result<<endl;
-
+    Solution_InsertTest();
+    cout << __GNUC__ << endl;
+    cout << __cplusplus << endl;
+    system("pause");
     return 0;
 }
 

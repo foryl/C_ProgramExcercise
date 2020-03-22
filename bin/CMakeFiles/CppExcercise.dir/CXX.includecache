@@ -23,6 +23,14 @@ algorithm
 -
 numeric
 -
+map
+-
+
+E:/0.MyExcercise/3.CPPProgrammingExcercise/library/Sales_item.h
+iostream
+-
+string
+-
 
 E:/0.MyExcercise/3.CPPProgrammingExcercise/library/screen3.h
 string
@@ -51,4 +59,6 @@ library/LeetCode.h
 E:/0.MyExcercise/3.CPPProgrammingExcercise/library/LeetCode.h
 library/screen3.h
 E:/0.MyExcercise/3.CPPProgrammingExcercise/library/screen3.h
+library/Sales_item.h
+E:/0.MyExcercise/3.CPPProgrammingExcercise/library/Sales_item.h
 
